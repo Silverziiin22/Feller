@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>estudioum_ — ideias que ganham forma</title>
+<meta name="description" content="estudioum_: laboratório criativo de direção de arte, design e experiências digitais.">
+<meta property="og:title" content="estudioum_"><meta property="og:description" content="Ideias que ganham forma.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2309090B'/%3E%3Crect x='7' y='22' width='18' height='3' fill='%23C8FF4D'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#work">Pular para os projetos</a>
+<header class="top">
+ <a class="logo" href="#top" aria-label="estudioum_ — início">estudioum<i>_</i></a>
+ <nav aria-label="Principal"><ul>
+  <li><a href="#work" class="mono">Projetos</a></li><li><a href="#servicos" class="mono">Serviços</a></li>
+  <li><a href="#processo" class="mono">Processo</a></li><li><a href="#contato" class="mono">Contato</a></li></ul></nav>
+</header>
+<main id="top">
+<div class="hero">
+ <div>
+  <h1 aria-label="Ideias que ganham forma."><span><b>Ideias</b></span><span><b>que ganham</b></span><span><b>forma<em>_</em></b></span></h1>
+  <p class="lede">Direção de arte, design e experiências digitais para marcas que preferem ser lembradas a ser toleradas.</p>
+  <div class="cta"><a class="btn p" href="#work">Ver projetos →</a><a class="btn" href="#contato">Falar com o estúdio</a><button class="btn" type="button" data-open="manifesto">Manifesto.txt</button></div>
+ </div>
+ <div class="scene" aria-hidden="true" id="scene"><div class="ring"></div><div class="rig"><div class="spin"><div class="cube a"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><div class="orb"></div></div></div>
+ <div class="hero-foot"><span class="mono scroll">Role para explorar</span><span class="mono" style="color:var(--mut)">Lab nº 01 — Brasil</span></div>
+</div>
+
+<section class="intro" aria-labelledby="i-t"><span class="mono" style="color:var(--acc)" id="i-t">/ 01 Estúdio</span>
+ <p>Um laboratório onde briefing vira objeto. <span>Pensamos a forma, o movimento e o código como uma coisa só.</span></p></section>
+
+<section id="work" aria-labelledby="w-t">
+ <div class="sh"><span class="mono">/ 02 Projetos</span><h2 id="w-t">Trabalhos selecionados</h2></div>
+ <div class="filters" role="group" aria-label="Filtrar por categoria" id="filters"></div>
+ <div class="grid" id="grid" aria-live="polite"></div>
+ <p class="note">Os projetos acima são <strong>exemplos demonstrativos</strong>, sem clientes ou resultados reais. Substitua-os no array <code>PROJECTS</code> no final do arquivo.</p>
+</section>
+
+<section id="processo" aria-labelledby="p-t">
+ <div class="sh"><span class="mono">/ 03 Processo</span><h2 id="p-t">Do ruído à forma</h2></div>
+ <ol class="rows"><li><span class="mono">01</span><h3>Escuta</h3><p>Conversa, referências e recorte do problema real antes de qualquer pixel.</p></li>
+ <li><span class="mono">02</span><h3>Experimento</h3><p>Estudos rápidos de tipografia, cor e composição para achar a voz da marca.</p></li>
+ <li><span class="mono">03</span><h3>Construção</h3><p>Design refinado e entregue em código ou arquivos prontos para uso.</p></li>
+ <li><span class="mono">04</span><h3>Lançamento</h3><p>Ajustes finos, documentação e passagem de bastão.</p></li></ol>
+</section>
+
+<section id="servicos" aria-labelledby="s-t">
+ <div class="sh"><span class="mono">/ 04 Serviços</span><h2 id="s-t">O que fazemos</h2></div>
+ <ul class="rows"><li><span class="mono">A</span><h3>Identidade visual</h3><p>Marca, tipografia e sistema de aplicação.</p></li>
+ <li><span class="mono">B</span><h3>Web & interface</h3><p>Sites e produtos digitais com direção de arte.</p></li>
+ <li><span class="mono">C</span><h3>Arte 3D & motion</h3><p>Peças tridimensionais e animação para campanhas.</p></li></ul>
+ <p class="note">Lista provisória: confirme os serviços efetivamente oferecidos.</p>
+</section>
+
+<section id="contato" class="contact" aria-labelledby="c-t">
+ <div><span class="mono" style="color:var(--acc)">/ 05 Contato</span><h2 id="c-t" style="margin-top:16px">Tem uma ideia? <em>Vamos dar forma.</em></h2></div>
+ <form id="form" novalidate>
+  <label>Nome<input name="nome" autocomplete="name" required aria-describedby="e-nome"><span class="err" id="e-nome"></span></label>
+  <label>E-mail<input name="email" type="email" autocomplete="email" required aria-describedby="e-email"><span class="err" id="e-email"></span></label>
+  <label>Sobre o projeto<textarea name="msg" rows="4" required aria-describedby="e-msg"></textarea><span class="err" id="e-msg"></span></label>
+  <button class="btn p" type="submit">Enviar mensagem</button>
+  <p id="status" role="status"></p>
+ </form>
+</section>
+</main>
+<footer><span>© <span id="yr"></span> estudioum_</span><ul id="social" aria-label="Redes sociais"></ul></footer>
+<div id="layer"></div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
